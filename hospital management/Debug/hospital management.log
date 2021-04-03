@@ -1,0 +1,4 @@
+﻿  hospital management.cpp
+C:\Users\ubayd\source\repos\hospital management\hospital management\menu\main_menu.h(6,15): warning C4102: 'menu_start': unreferenced label
+C:\Users\ubayd\source\repos\hospital management\hospital management\log\login.h(11,11): warning C4101: 'err': unreferenced local variable
+  hospital management.vcxproj -> C:\Users\ubayd\source\repos\hospital management\Debug\hospital management.exe
