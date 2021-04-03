@@ -144,6 +144,7 @@
     <ClCompile Include="libraries\sqlite\sqlite3.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="classes\accounts.h" />
     <ClInclude Include="libraries\sqlite\sqlite3.h" />
     <ClInclude Include="libraries\sqlite\sqlite3ext.h" />
     <ClInclude Include="log\log.h" />

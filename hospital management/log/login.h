@@ -8,7 +8,6 @@ int check_login(string username, string password){
     string sql, passwordDB;
     sqlite3* db;
     sqlite3_stmt* stmt; // result from execution
-    char* err; // error messages
     // connecting to DB
     rc = sqlite3_open("../hm_db.db", &db);
     // checking the connection status

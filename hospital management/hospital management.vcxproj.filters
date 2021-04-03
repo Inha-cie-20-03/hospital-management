@@ -44,5 +44,8 @@
     <ClInclude Include="menu\main_menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="classes\accounts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
