@@ -1,5 +1,6 @@
 // Pulatov Ubaydulla U2010210
 // Rafiev Alisher U2010213
+// Olimjon Nematov U2010
 
 #include <iostream>
 #include "menu/main_menu.h"
@@ -9,13 +10,14 @@ using namespace std;
 
 int main() {
     int a;
-    User user;
+    User* user = new User();
+
+
 login:
-    if (log_status(user) == 1) // log status will return 1 if user is registered and 0 if not
+    if (log_status() == 1) // log status will return 1 if user is registered and 0 if not
         // the user can also sign up in this step
     {
-        main_menu(user); //if log status 1 the user will have access to menu
-        system("pause");
+        main_menu(); //if log status 1 the user will have access to menu
     }
     else
     {

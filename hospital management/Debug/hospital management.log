@@ -1,11 +1,2 @@
 ﻿  hospital management.cpp
-C:\Users\ubayd\source\repos\hospital management\hospital management\menu\main_menu.h(7,15): warning C4102: 'menu_start': unreferenced label
-C:\Users\ubayd\source\repos\hospital management\hospital management\classes\accounts.h(7,12): error C2011: 'User': 'class' type redefinition
-C:\Users\ubayd\source\repos\hospital management\hospital management\classes\accounts.h(7): message : see declaration of 'User'
-C:\Users\ubayd\source\repos\hospital management\hospital management\log\log.h(21,17): error C2027: use of undefined type 'User'
-C:\Users\ubayd\source\repos\hospital management\hospital management\classes\accounts.h(7): message : see declaration of 'User'
-C:\Users\ubayd\source\repos\hospital management\hospital management\hospital management.cpp(12,10): error C2079: 'user' uses undefined class 'User'
-C:\Users\ubayd\source\repos\hospital management\hospital management\hospital management.cpp(14,8): error C2664: 'int log_status(User &)': cannot convert argument 1 from 'int' to 'User &'
-C:\Users\ubayd\source\repos\hospital management\hospital management\log\log.h(9,5): message : see declaration of 'log_status'
-C:\Users\ubayd\source\repos\hospital management\hospital management\hospital management.cpp(17,23): error C2664: 'void main_menu(User &)': cannot convert argument 1 from 'int' to 'User &'
-C:\Users\ubayd\source\repos\hospital management\hospital management\menu\main_menu.h(6,6): message : see declaration of 'main_menu'
+  hospital management.vcxproj -> C:\Users\ubayd\source\repos\hospital management\Debug\hospital management.exe
