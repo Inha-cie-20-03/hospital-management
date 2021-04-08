@@ -1,11 +1,12 @@
 // Pulatov Ubaydulla U2010210
 // Rafiev Alisher U2010213
-// Olimjon Nematov U2010
+// Olimjon Nematov U2010189
 
 #include <iostream>
 #include "menu/main_menu.h"
 #include "log/log.h"
 #include "classes/accounts.h"
+
 using namespace std;
 
 int main() {

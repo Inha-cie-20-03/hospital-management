@@ -30,7 +30,6 @@ int check_login(string username, string password){
     }
     else {
         passwordDB = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0))); // taking the 0 row and 0 column
-        cout << passwordDB << endl << password << endl;
         if (password == passwordDB)
         {
             return 1;

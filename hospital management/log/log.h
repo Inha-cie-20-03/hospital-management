@@ -9,6 +9,7 @@ using namespace std;
 int log_status(){
     int los; // los = login or signup
     string username, password;
+
     cout << "Enter: \n 1 - to LogIn \n 2 - for SignUp" << endl;
     cout << "Enter command: "; cin >> los;
     if (los == 1)
