@@ -21,10 +21,10 @@ int main() {
 
 
 login:
-    if (log_status(username, type, user)  == 1) // log status will return 1 if user is registered and 0 if not
+    if (log_status(username, type)  == 1) // log status will return 1 if user is registered and 0 if not
         // the user can also sign up in this step
     {
-        main_menu(username, type, user); //if log status 1 the user will have access to menu
+        main_menu(username, type); //if log status 1 the user will have access to menu
     }
     else
     {

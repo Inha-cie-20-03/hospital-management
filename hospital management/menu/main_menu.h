@@ -9,7 +9,7 @@
 using namespace std;
 
 
-void main_menu(string& user, int &type, User &lalala){
+void main_menu(string& user, int &type){
     system("CLS");
     if (type == 0) {
         user_menu(user);
