@@ -1,12 +1,14 @@
 // Ubaydulla's code start 
 // =======================//======================
 
+
 #include <string>
 #include <iostream>
 #include "login.h"
 #include "signup.h"
-//#include "../classes/accounts.h"
 
+#include "../classes/accounts.h"
+#pragma once
 using namespace std;
 
 int log_status(string &user, int &type){
@@ -23,6 +25,7 @@ int log_status(string &user, int &type){
         cout << "Enter password: "; cin >> password;
         if (check_login(username, password, type) == 1) { 
             user = username;
+            //lalal.set_user_by_username(username);
             return 1; } // check_login finction will return 1 if this user exist and 0 if not
         else return 0;
     }

@@ -1,6 +1,7 @@
 // Ubaydulla's code start 
 // =======================//======================
 
+#pragma once
 #include <string>
 #include "../libraries/sqlite/sqlite3.h"
 
@@ -45,3 +46,7 @@ int check_login(string username, string password, int &type){
         }
     }
 }
+
+
+// Ubaydulla's code end
+// ----------------------------------------

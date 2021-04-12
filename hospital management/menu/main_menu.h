@@ -4,18 +4,13 @@
 #include <string>
 #include <iostream>
 #include "user/user.h"
-//#include "../classes/accounts.h"
+#include "../classes/accounts.h"
+#pragma once
 using namespace std;
 
 
-void main_menu(string& user, int &type){
+void main_menu(string& user, int &type, User &lalala){
     system("CLS");
-    //cout << "Welcome to Hospital-Managment system!" << endl;
-    //cout << "Your name: " << user.getName() << endl;
-    //cout << "Your lastname: " << user.getLast_name() << endl;
-    //cout << "Your date of birthd: " << user.getData_of_birth() << endl;
-    //cout << "Your address: " << user.getAddress() << endl;
-    //cout << "Type: " << user.getUser_type() << endl;
     if (type == 0) {
         user_menu(user);
     }
@@ -26,3 +21,7 @@ void main_menu(string& user, int &type){
         //admin_menu(user);
     }
 };
+
+
+// Ubaydulla's code end
+// ----------------------------------------

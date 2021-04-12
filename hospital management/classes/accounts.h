@@ -1,6 +1,7 @@
 // Alisher's code start 
 // =======================//======================
 
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -44,7 +45,7 @@ public:
     int getUser_type() {
         return user_type;
     }
-    void setPassword(int password) {
+    void setPassword(string password) {
         this->password = password;
     }
     string getPassword() {
@@ -94,6 +95,8 @@ public:
         user_type = sqlite3_column_int(stmt, 7);
     }
 };
+
+
 
 
 // Alisher's code end
