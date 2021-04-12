@@ -1,3 +1,7 @@
+// Alisher's code start 
+// =======================//======================
+
+
 #include <iostream>
 #include <string>
 #include "../libraries/sqlite/sqlite3.h"
@@ -90,3 +94,7 @@ public:
         user_type = sqlite3_column_int(stmt, 7);
     }
 };
+
+
+// Alisher's code end
+// ----------------------------------------

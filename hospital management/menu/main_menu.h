@@ -1,3 +1,6 @@
+// Ubaydulla's code start 
+// =======================//======================
+
 #include <string>
 #include <iostream>
 #include "user/user.h"
@@ -13,9 +16,13 @@ void main_menu(string& user, int &type){
     //cout << "Your date of birthd: " << user.getData_of_birth() << endl;
     //cout << "Your address: " << user.getAddress() << endl;
     //cout << "Type: " << user.getUser_type() << endl;
-    if (type == 2) {
-        cout << "You admin" << endl;
-        system("pause");
+    if (type == 0) {
         user_menu(user);
+    }
+    if (type == 1) {
+        //doctor_menu(user);
+    }
+    if (type == 2) {
+        //admin_menu(user);
     }
 };

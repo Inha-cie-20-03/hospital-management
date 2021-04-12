@@ -1,3 +1,6 @@
+// Ubaydulla's code start 
+// =======================//======================
+
 #include <string>
 #include "../libraries/sqlite/sqlite3.h"
 

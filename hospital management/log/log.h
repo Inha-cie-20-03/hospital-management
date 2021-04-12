@@ -1,3 +1,6 @@
+// Ubaydulla's code start 
+// =======================//======================
+
 #include <string>
 #include <iostream>
 #include "login.h"
@@ -34,3 +37,7 @@ int log_status(string &user, int &type){
         return 0;
     }
 };
+
+
+// Ubaydulla's code end
+// ----------------------------------------
