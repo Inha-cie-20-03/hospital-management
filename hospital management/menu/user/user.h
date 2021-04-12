@@ -4,11 +4,11 @@
 using namespace std;
 
 
-void user_menu() {
+void user_menu(string &user){
     int number;
 menu:
     system("cls");
-    cout << "Welcome to Hospital management system!" << endl;
+    cout << "Welcome to Hospital management system "<< user << " !" << endl;
     cout << "Menu (Choose any option which you want) : " << endl;
     cout << "1 Book doctor" << endl;
     cout << "2 View active bookings" << endl;

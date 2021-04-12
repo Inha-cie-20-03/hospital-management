@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void main_menu(){
+void main_menu(string& user){
     int type = 0;
     system("CLS");
     //cout << "Welcome to Hospital-Managment system!" << endl;
@@ -15,6 +15,6 @@ void main_menu(){
     //cout << "Your address: " << user.getAddress() << endl;
     //cout << "Type: " << user.getUser_type() << endl;
     if (type == 0) {
-        user_menu();
+        user_menu(user);
     }
 };
