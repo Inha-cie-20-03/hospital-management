@@ -10,15 +10,15 @@
 using namespace std;
 
 int main() {
-    int a;
+    int a, type;
     string username;
 
 
 login:
-    if (log_status(username)  == 1) // log status will return 1 if user is registered and 0 if not
+    if (log_status(username, type)  == 1) // log status will return 1 if user is registered and 0 if not
         // the user can also sign up in this step
     {
-        main_menu(username); //if log status 1 the user will have access to menu
+        main_menu(username, type); //if log status 1 the user will have access to menu
     }
     else
     {

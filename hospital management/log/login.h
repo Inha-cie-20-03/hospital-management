@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int check_login(string username, string password){
+int check_login(string username, string password, int &type){
     int rc; // status check variable
     string sql, passwordDB;
     sqlite3* db;
@@ -18,7 +18,7 @@ int check_login(string username, string password){
         return 0;
     }
     //prepare the sql 
-    sql = "SELECT password FROM Accounts WHERE username = '" + username + "'";
+    sql = "SELECT password, type FROM Accounts WHERE username = '" + username + "'";
     //execute the information from DB
     sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0); //placing the result to stmt
     rc = sqlite3_step(stmt); // preapre the table version of the resulta
@@ -32,6 +32,7 @@ int check_login(string username, string password){
         passwordDB = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0))); // taking the 0 row and 0 column
         if (password == passwordDB)
         {
+            type = sqlite3_column_int(stmt, 1);
             return 1;
         }
         else {
