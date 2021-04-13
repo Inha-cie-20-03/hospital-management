@@ -56,5 +56,8 @@
     <ClInclude Include="menu\admin\admin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="menu\admin\about.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

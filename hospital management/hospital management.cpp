@@ -19,18 +19,25 @@ int main() {
 
 
 login:
-    if (log_status(user)  == 1) // log status will return 1 if user is registered and 0 if not
-        // the user can also sign up in this step
-    {
-        main_menu(user); //if log status 1 the user will have access to menu
-    }
-    else
-    {
-        cout << "If you want retry type 1, else 0 for exit from app." << endl;
-        cin >> a;
-        if (a == 1)
+    a = log_status(user);
+        switch(a) {
+        case 1:
+            main_menu(user);
+            system("pause");
+            break;
+        case 0:
+            cout << "If you want retry type 1, else 0 for exit from app." << endl;
+            cin >> a;
+            if (a == 1) goto login;
+            break;
+        case 2:
+            break;
+        default:
+            cout << "Enter the correct symbol!" << endl;
             goto login;
-    }
+            break;
+        };
+
     cout << "Good bye!" << endl;
     system("pause");
     return 0;

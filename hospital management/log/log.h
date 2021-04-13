@@ -14,7 +14,7 @@ int log_status(User &user){
     int los; // los = login or signup
     string username, password;
 
-    cout << "Enter: \n 1 - to LogIn \n 2 - for SignUp" << endl;
+    cout << "Enter: \n 1 - to LogIn \n 2 - for SignUp \n 3 - Exit" << endl;
     cout << "Enter command: "; cin >> los;
     if (los == 1)
     {
@@ -31,6 +31,9 @@ int log_status(User &user){
     else if (los == 2) {
         if (sign_up() == 1) return 1;
         else return 0;
+    }
+    else if (los == 3) {
+        return 2;
     }
     else
     {

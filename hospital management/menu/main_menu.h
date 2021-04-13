@@ -5,13 +5,13 @@
 #include <iostream>
 #include "user/user.h"
 #include "doctor/doctor.h"
+#include "admin/admin.h"
 #include "../classes/accounts.h"
 #pragma once
 using namespace std;
 
 
 void main_menu(User &user){
-    system("CLS");
     int type = user.getUser_type();
     if (type == 0) {
         user_menu(user);
@@ -20,7 +20,7 @@ void main_menu(User &user){
         doctor_menu(user);
     }
     if (type == 2) {
-        //admin_menu(user);
+        admin_menu(user);
     }
 };
 
