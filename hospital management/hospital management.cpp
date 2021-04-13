@@ -9,14 +9,12 @@
 #include "menu/main_menu.h"
 #include "log/log.h"
 #include "classes/accounts.h"
-
 #include "classes/accounts.h"
 
 using namespace std;
 
 int main() {
-    int a, type;
-    string username;
+    int a;
     User user;
 
 

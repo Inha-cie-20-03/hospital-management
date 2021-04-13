@@ -6,7 +6,6 @@
 #include <iostream>
 #include "login.h"
 #include "signup.h"
-
 #include "../classes/accounts.h"
 #pragma once
 using namespace std;

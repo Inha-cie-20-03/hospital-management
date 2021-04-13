@@ -1,4 +1,2 @@
 ﻿  hospital management.cpp
-C:\Users\ubayd\source\repos\hospital management\hospital management\hospital management.cpp(18,12): warning C4101: 'type': unreferenced local variable
-LINK : warning LNK4067: ambiguous entry point; selected 'mainCRTStartup'
   hospital management.vcxproj -> C:\Users\ubayd\source\repos\hospital management\Debug\hospital management.exe
