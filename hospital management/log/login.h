@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int check_login(string username, string password, int &type){
+int check_login(string username, string password){
     int rc; // status check variable
     string sql, passwordDB;
     sqlite3* db;
@@ -36,7 +36,7 @@ int check_login(string username, string password, int &type){
         passwordDB = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0))); // taking the 0 row and 0 column
         if (password == passwordDB)
         {
-            type = sqlite3_column_int(stmt, 1);
+            //type = sqlite3_column_int(stmt, 1);
             return 1;
         }
         else {

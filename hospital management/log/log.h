@@ -11,7 +11,7 @@
 #pragma once
 using namespace std;
 
-int log_status(string &user, int &type){
+int log_status(User &user){
     int los; // los = login or signup
     string username, password;
 
@@ -23,8 +23,8 @@ int log_status(string &user, int &type){
         cout << "Welcome to login page!" << endl << endl;
         cout << "Enter username: "; cin >> username;
         cout << "Enter password: "; cin >> password;
-        if (check_login(username, password, type) == 1) { 
-            user = username;
+        if (check_login(username, password) == 1) { 
+            user.set_user_by_username(username);
             //lalal.set_user_by_username(username);
             return 1; } // check_login finction will return 1 if this user exist and 0 if not
         else return 0;

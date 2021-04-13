@@ -9,8 +9,9 @@
 using namespace std;
 
 
-void main_menu(string& user, int &type){
+void main_menu(User &user){
     system("CLS");
+    int type = 0;
     if (type == 0) {
         user_menu(user);
     }
