@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "../../classes/accounts.h"
+#include "about_me.h"
 #pragma once
 using namespace std;
 
@@ -38,13 +39,8 @@ menu:
         goto menu;
         break;
     case 4:
-	// abou_me();
-        // Olimjon's code starts
-        cout << "\n\nFirst Name: " << user.getName() << "\n";
-        cout << "Last Name: " << user.getLast_name() << "\n";
-        cout << "Date of birth(DDMMYY): " << user.getData_of_birth() << "\n";
-        cout << "Address: " << user.getAddress() << "\n\n\n";
-        // Olimjon's code ends
+	    // abou_me();
+        about_user(user);
         system("pause");
         goto menu;
         break;
