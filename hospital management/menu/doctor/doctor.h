@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include "../../classes/accounts.h"
+#include "about_doctor.h"
 #pragma once
 using namespace std;
 
@@ -32,7 +33,7 @@ menu:
         goto menu;
         break;
     case 3:
-        // abou_me();
+        about_doctor(user);
         system("pause");
         goto menu;
         break;

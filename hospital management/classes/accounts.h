@@ -86,7 +86,7 @@ public:
         sqlite3_step(stmt);
 
         id = sqlite3_column_int(stmt, 0);
-        username = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1)));
+        this -> username = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1)));
         name = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2)));
         last_name = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3)));
         data_of_birth = sqlite3_column_int(stmt, 4);

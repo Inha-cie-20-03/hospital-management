@@ -150,8 +150,9 @@
     <ClInclude Include="log\log.h" />
     <ClInclude Include="log\login.h" />
     <ClInclude Include="log\signup.h" />
-    <ClInclude Include="menu\admin\about.h" />
+    <ClInclude Include="menu\admin\about_admin.h" />
     <ClInclude Include="menu\admin\admin.h" />
+    <ClInclude Include="menu\doctor\about_doctor.h" />
     <ClInclude Include="menu\doctor\doctor.h" />
     <ClInclude Include="menu\main_menu.h" />
     <ClInclude Include="menu\user\user.h" />
