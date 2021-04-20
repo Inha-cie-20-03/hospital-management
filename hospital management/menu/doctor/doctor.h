@@ -6,6 +6,7 @@
 #include <iostream>
 #include "../../classes/accounts.h"
 #include "about_doctor.h"
+#include "all_doc_booking.h"
 #pragma once
 using namespace std;
 
@@ -23,12 +24,12 @@ menu:
     switch (number)
     {
     case 1:
-        // all_bookings();
+        all_doc_bookings(user);
         system("pause");
         goto menu;
         break;
     case 2:
-        // bookings_for_today();
+        bookings_for_today(user);
         system("pause");
         goto menu;
         break;

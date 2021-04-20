@@ -62,5 +62,8 @@
     <ClInclude Include="menu\doctor\about_doctor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="menu\doctor\all_doc_booking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
