@@ -10,12 +10,13 @@ using namespace std;
 
 void all_doc_bookings(User& user) {
     int rc; // status check variable
-    string sql, passwordDB;
+    string sql, id;
     sqlite3* db;
     sqlite3_stmt* stmt; // result from execution
     // connecting to DB
     rc = sqlite3_open("../hm_db.db", &db);
     //prepare the sql 
+    //id = itos(user.getId());
     sql = "SELECT Accounts.name, Management.day_order, Management.date from Accounts, Management, Clinics where Management.clinic_id = 1 and Management.user_id = Accounts.id and Management.doctor_id = 4";
     //execute the information from DB
     sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0); //placing the result to stmt
@@ -40,7 +41,7 @@ void all_doc_bookings(User& user) {
 
 void bookings_for_today(User &user) {
     int rc; // status check variable
-    string sql, passwordDB;
+    string sql, id;
     sqlite3* db;
     sqlite3_stmt* stmt; // result from execution
     // connecting to DB

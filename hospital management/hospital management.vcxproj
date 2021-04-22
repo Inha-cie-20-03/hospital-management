@@ -152,6 +152,7 @@
     <ClInclude Include="log\signup.h" />
     <ClInclude Include="menu\admin\about_admin.h" />
     <ClInclude Include="menu\admin\admin.h" />
+    <ClInclude Include="menu\admin\user_bookings.h" />
     <ClInclude Include="menu\doctor\about_doctor.h" />
     <ClInclude Include="menu\doctor\all_doc_booking.h" />
     <ClInclude Include="menu\doctor\doctor.h" />
