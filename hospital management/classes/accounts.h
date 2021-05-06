@@ -124,9 +124,10 @@ public:
         maxId = maxId + 1;
         sql = "INSERT INTO Accounts VALUES (" + to_string(maxId) + ", '" + username + "', '" + name + "', '" + last_name + "', " + to_string(data_of_birth) + ", '" + address + "', '" + password + "', 0)";
         rc = sqlite3_exec(db, sql.c_str(), NULL, NULL, &err);
-        cout << sql;
-        if (rc != SQLITE_OK) cout << "Error: " << err;
-        system("pause");
+        if (rc != SQLITE_OK) {
+            cout << "Error: " << err;
+            system("pause");
+        }
      }
 };
 
