@@ -17,7 +17,7 @@ menu:
     cout << "Welcome to Hospital management system " << user.getName() << " !" << endl;
     cout << "Menu (Choose any option which you want) : " << endl;
     cout << "1 See all bookings" << endl;
-    cout << "2 View bookings for today" << endl;
+    cout << "2 View bookings for particular day" << endl;
     cout << "3 About me" << endl;
     cout << "4 Exit" << endl;
     cout << "Enter the command: "; cin >> number;

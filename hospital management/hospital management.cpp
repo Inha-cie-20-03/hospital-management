@@ -37,9 +37,6 @@ login:
             goto login;
             break;
         };
-
-    cout << "Good bye!" << endl;
-    system("pause");
     return 0;
 }
 

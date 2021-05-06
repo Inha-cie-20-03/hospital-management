@@ -13,7 +13,7 @@ using namespace std;
 int log_status(User &user){
     int los; // los = login or signup
     string username, password;
-
+    system("CLS");
     cout << "Enter: \n 1 - to LogIn \n 2 - for SignUp \n 3 - Exit" << endl;
     cout << "Enter command: "; cin >> los;
     if (los == 1)
@@ -29,7 +29,7 @@ int log_status(User &user){
         else return 0;
     }
     else if (los == 2) {
-        if (sign_up() == 1) return 1;
+        if (sign_up(user) == 1) return 1;
         else return 0;
     }
     else if (los == 3) {

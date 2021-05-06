@@ -68,5 +68,23 @@
     <ClInclude Include="menu\admin\user_bookings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="menu\user\about_me.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\admin\add_user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\user\active_bookings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\user\book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\user\cancel_booking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\admin\doc_bookings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

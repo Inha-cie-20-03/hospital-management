@@ -10,7 +10,7 @@ using namespace std;
  
 
 
-int sign_up() {
+int sign_up(User &user) {
 	string var, var2;
 	User new_user;
 	int int_var;

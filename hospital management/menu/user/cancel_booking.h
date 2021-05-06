@@ -6,7 +6,7 @@
 #include "book.h"
 using namespace std;
 
-void cancel_bookings(User& user) {
+void cancel_booking(User& user) {
 
     int userId = user.getId();
     int last_day;

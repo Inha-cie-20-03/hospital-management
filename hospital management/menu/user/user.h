@@ -5,6 +5,9 @@
 #include <iostream>
 #include "../../classes/accounts.h"
 #include "about_me.h"
+#include "active_bookings.h"
+#include "book.h"
+#include "cancel_booking.h"
 #pragma once
 using namespace std;
 
@@ -24,22 +27,21 @@ menu:
     switch (number)
     {
     case 1:
-        // book_doctor();
+        book_doctor(user);
         system("pause");
         goto menu;
         break;
     case 2:
-        // view_active_bookings();
+        active_bookings(user);
         system("pause");
         goto menu;
         break;
     case 3:
-        // cencel_booking();
+        cancel_booking(user);
         system("pause");
         goto menu;
         break;
     case 4:
-	    // abou_me();
         about_user(user);
         system("pause");
         goto menu;
@@ -55,8 +57,5 @@ menu:
     };
 
 }
-
-
-
 // Ubaydulla's code end
 // ----------------------------------------

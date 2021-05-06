@@ -5,9 +5,10 @@
 #include <string>
 #include <iostream>
 #include "../../classes/accounts.h"
-#include "../../log/signup.h"
+#include "add_user.h"
 #include "user_bookings.h"
 #include "about_admin.h"
+#include "doc_bookings.h"
 #pragma once
 using namespace std;
 
@@ -26,7 +27,7 @@ menu:
     switch (number)
     {
     case 1:
-        // all_doctor_bookings();
+        doctor_bookings();
         system("pause");
         goto menu;
         break;
@@ -36,7 +37,7 @@ menu:
         goto menu;
         break;
     case 3:
-        sign_up();
+        add_new_user();
         system("pause");
         goto menu;
         break;
