@@ -86,7 +86,7 @@ public:
         sqlite3_step(stmt);
 
         id = sqlite3_column_int(stmt, 0);
-        this -> username = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1)));
+        this->username = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 1)));
         name = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 2)));
         last_name = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 3)));
         data_of_birth = sqlite3_column_int(stmt, 4);
@@ -94,10 +94,44 @@ public:
         password = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6)));
         user_type = sqlite3_column_int(stmt, 7);
     }
+    int check_free_username(string name) {
+        int rc; // status check variable
+        string sql;
+        sqlite3* db;
+        sqlite3_stmt* stmt; // result from execution
+        // connecting to DB
+        rc = sqlite3_open("../hm_db.db", &db);
+        sql = "SELECT username FROM Accounts WHERE username = '" + name + "'";
+        //execute the information from DB
+        sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0); //placing the result to stmt // preapre the table version of the resulta
+        if (sqlite3_step(stmt) == SQLITE_DONE) return 0;
+        else return 1;
+    }
+    void saveUser() {
+        char* err;
+        int rc, maxId=0; // status check variable
+        string sql;
+        sqlite3* db;
+        sqlite3_stmt* stmt; // result from execution
+        // connecting to DB
+        rc = sqlite3_open("../hm_db.db", &db);
+        sql = "SELECT id FROM Accounts ";
+        //execute the information from DB
+        sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, 0); //placing the result to stmt // preapre the table version of the resulta
+        while (sqlite3_step(stmt) != SQLITE_DONE) {
+            if (maxId < sqlite3_column_int(stmt, 0)) maxId = sqlite3_column_int(stmt, 0);
+        }
+        maxId = maxId + 1;
+        sql = "INSERT INTO Accounts VALUES (" + to_string(maxId) + ", '" + username + "', '" + name + "', '" + last_name + "', " + to_string(data_of_birth) + ", '" + address + "', '" + password + "', 0)";
+        rc = sqlite3_exec(db, sql.c_str(), NULL, NULL, &err);
+        cout << sql;
+        if (rc != SQLITE_OK) cout << "Error: " << err;
+        system("pause");
+     }
 };
 
 
 
 
 // Alisher's code end
-// ----------------------------------------
+// ---------------------------------

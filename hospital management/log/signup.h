@@ -10,9 +10,8 @@ using namespace std;
  
 
 
-int sign_up(User &user) {
+int sign_up(User &new_user) {
 	string var, var2;
-	User new_user;
 	int int_var;
 	int busy = 0;
 	system("cls");
@@ -28,7 +27,7 @@ int sign_up(User &user) {
 	new_user.setAddress(var);
 	username:
 	cout << "Enter your username (it will be used to login to system): "; cin >> var;
-	//new_user.Check_free_username(var) take string and return 1 if it is busy
+	busy = new_user.check_free_username(var); // take string and return 1 if it is busy
 	if (busy == 1) {
 		cout << "This username already taken! Please try another one." << endl;
 		goto username;
@@ -55,7 +54,7 @@ int sign_up(User &user) {
 
 	cout << "Is it correct (y/n): "; cin >> var;
 	if (var == "y") {
-		// new_user.saveUser()
+		new_user.saveUser();
 		return 1;
 	}
 	cout << "We are sorry for dufficulties. If you have any problem just live a comment." << endl;
