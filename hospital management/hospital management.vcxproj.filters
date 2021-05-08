@@ -80,9 +80,6 @@
     <ClInclude Include="menu\user\book.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="menu\user\cancel_booking.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="menu\admin\doc_bookings.h">
       <Filter>Header Files</Filter>
     </ClInclude>

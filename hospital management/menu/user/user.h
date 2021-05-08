@@ -7,7 +7,7 @@
 #include "about_me.h"
 #include "active_bookings.h"
 #include "book.h"
-#include "cancel_booking.h"
+
 #pragma once
 using namespace std;
 
@@ -20,9 +20,8 @@ menu:
     cout << "Menu (Choose any option which you want) : " << endl;
     cout << "1 Book doctor" << endl;
     cout << "2 View active bookings" << endl;
-    cout << "3 Cencel booking" << endl;
-    cout << "4 About me" << endl;
-    cout << "5 Exit" << endl;
+    cout << "3 About me" << endl;
+    cout << "4 Exit" << endl;
     cout << "Enter the command: "; cin >> number;
     switch (number)
     {
@@ -37,16 +36,11 @@ menu:
         goto menu;
         break;
     case 3:
-        cancel_booking(user);
-        system("pause");
-        goto menu;
-        break;
-    case 4:
         about_user(user);
         system("pause");
         goto menu;
         break;
-    case 5:
+    case 4:
         cout << "Good bye, thanks for using our system)" << endl;
         break;
     default:

@@ -30,16 +30,19 @@ int check_login(string username, string password){
         //if no ->
         cout << "Your login or password is incorrect, try again or signup" << endl;
         system("pause");
+        sqlite3_close(db);
         return 0; // return 0 because there is no username match
     }
     else {
         passwordDB = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0))); // taking the 0 row and 0 column
         if (password == passwordDB)
         {
+            sqlite3_close(db);
             //type = sqlite3_column_int(stmt, 1);
             return 1;
         }
         else {
+            sqlite3_close(db);
             cout << "Your login or password is incorrect, try again or signup" << endl;
             system("pause");
             return 0;

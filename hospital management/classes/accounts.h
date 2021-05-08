@@ -93,6 +93,8 @@ public:
         address = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 5)));
         password = string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 6)));
         user_type = sqlite3_column_int(stmt, 7);
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
     }
     int check_free_username(string name) {
         int rc; // status check variable
@@ -128,6 +130,8 @@ public:
             cout << "Error: " << err;
             system("pause");
         }
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
      }
 };
 
